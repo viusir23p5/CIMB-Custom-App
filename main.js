@@ -1,3 +1,5 @@
+console.log('main.js')
+
 webpackJsonp([184, 189], [, , , function(e, t, n) {
     "use strict";
     n.d(t, "a", function() {
