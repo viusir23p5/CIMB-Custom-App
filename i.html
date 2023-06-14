@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+<html ng-app="CimbBanking">
+<head><base href="./">
+	<meta http-equiv="cache-control" content="no-cache, must-revalidate, post-check=0, pre-check=0">
+	<meta http-equiv="expires" content="0">
+	<meta content="text/html; charset=utf-8" http-equiv="content-type">
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>CIMB Clicks</title>
+	<script type="text/javascript" src="/ruxitagentjs_ICA2NVfghjmqru_10257221222094147.js" data-dtconfig="rid=RID_1855457228|rpid=717410258|domain=cimbclicks.com.my|reportUrl=/rb_10ae20fb-3a4f-4052-805d-5d3f4e0f77b3|app=4621cd73ce786464|ssc=1|featureHash=ICA2NVfghjmqru|vcv=2|rdnt=1|uxrgce=1|bp=3|cuc=q3dihta5|mel=100000|md=mdcc1=bs.pageName,mdcc2=bs.pageURL,mdcc3=bs.pageType,mdcc4=bs.campaign,mdcc5=bs.channel,mdcc6=bs.events|ssv=4|lastModification=1686712139024|dtVersion=10257221222094147|tp=500,50,0,1|uxdcw=1500|agentUri=/ruxitagentjs_ICA2NVfghjmqru_10257221222094147.js"></script><link href="img/icon/favicon.ico" rel="icon" type="image/x-icon">
+	<script src="https://assets.adobedtm.com/ff5b4992e4a1d688af76d72d00196b5a6d19fab8/satelliteLib-567eefb79f1e1963e91b45e3a508a36476742e22.js"></script>
+	<!-- mobile capability and tweaks -->
+	<meta name="viewport" id="viewport" content="width=device-width, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-touch-fullscreen" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<meta name="format-detection" content="telephone=no">
+
+	<link href="css/common-89b621e8.css" rel="stylesheet" type="text/css">
+	<link href="css/login-9e8658ef.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="css/main-6eb98f1b.css" type="text/css">
+
+	<script>
+
+	try{
+		
+		if ((navigator.userAgent.indexOf("Presto") != -1) && (navigator.userAgent.indexOf("Android") != -1)) {		
+					
+					setTimeout(function(){
+						document.getElementById('indexLoader').style.display = "none";  
+						document.getElementById('operaminiContent').style.display = "block";  
+					}, 500);
+		
+			}
+			}catch(e){
+						console.log("err: "+e.message);
+			}
+
+		engine = null;
+		if (window.navigator.appName == "Microsoft Internet Explorer") {
+			// This is an IE browser. What mode is the engine in?
+			if (document.documentMode) // IE8 or later
+				engine = document.documentMode;
+			else // IE 5-7
+			{
+				engine = 5; // Assume quirks mode unless proven otherwise
+				if (document.compatMode) {
+					if (document.compatMode == "CSS1Compat")
+						engine = 7; // standards mode
+				}
+				// There is no test for IE6 standards mode because that mode  
+				// was replaced by IE7 standards mode; there is no emulation.
+			}
+			// the engine variable now contains the document compatibility mode.
+		}
+
+		function closeBrowser() {
+
+			console.log('navigator.appVersion', navigator.appVersion);
+
+			if (navigator.appVersion.indexOf("MSIE 10") !== -1) {
+				console.log("IM IE10");
+			}
+			else {
+				logoutOnExit();
+				console.log('close browser');
+			}
+		}
+
+		function redirect() {
+				window.location.href = './unsupported/unsupported-browser.html';
+			}
+
+		function checkBrowser() {
+			if (navigator.userAgent.indexOf('MSIE') !== -1 || navigator.appVersion.indexOf('Trident/') > 0) {
+				console.log("Am IE browser11");				
+
+				if (document.all && !document.compatMode) {
+					console.log(" Am IE 5 or older");
+					//alert("Browser not supported (IE5).");
+					redirect();
+				}
+				else if (document.all && !window.XMLHttpRequest) {
+					console.log(" Am IE 6 or older");
+					//alert("Browser not supported (IE6).");
+					redirect();
+				}
+
+				else if (document.all && !document.querySelector) {
+					console.log(" Am IE 7 or older11");
+					//alert("Browser not supported (IE7).");
+					redirect();
+				}
+
+				else if (document.all && !document.addEventListener) {
+					console.log(" Am IE 8 or older11");
+					//alert("Browser not supported (IE8).");
+					redirect();
+				}
+				
+			}
+		};
+		// Define WL namespace.
+		var WL = WL ? WL : {};
+		/**
+		 * WLClient configuration variables.
+		 * Values are injected by the deployer that packs the gadget.
+		 */
+		WL.StaticAppProps = {
+			"APP_DISPLAY_NAME": "Clicks MY",
+			"APP_ID": "CIMBClicksMY",
+			"APP_SERVICES_URL": "/mfp/apps/services/",
+			"APP_VERSION": "1.0",
+			"ENVIRONMENT": "desktopbrowser",
+			"LOGIN_DISPLAY_TYPE": "popup",
+			"LOGIN_POPUP_HEIGHT": 610,
+			"LOGIN_POPUP_WIDTH": 920,
+			"WORKLIGHT_PLATFORM_VERSION": "7.1.0.0",
+			"WORKLIGHT_ROOT_URL": "/mfp/apps/services/api/CIMBClicksMY/common/"
+		};
+	</script>
+	<script src="js/dist/jquery.compressed.min.js"></script>
+	<script src="js/dist/rccp.compressed.min.js"></script>
+	<!-- <script src="js/classList.js"></script> -->
+	<!-- <script src="js/vendors/jquery/dist/jquery.min.js"></script> -->
+	<!-- <script src='js/mfp-init.js'></script> -->
+	<!-- <script src='js/login.js'></script> -->
+	<!-- <script src='inline.bundle.js'></script> -->
+	<!-- <script src='scripts.bundle.js'></script> -->
+	<!-- <script src="js/webarch/custom/custom.js"></script> -->
+	<!-- <script src="js/webarch/custom/overview.js"></script> -->
+	<!-- <script src="js/webarch/pages/pages.js"></script> -->
+	<!-- <script src="js/forms/input-field.js"></script> -->
+	<!-- <script src='js/service-provider.js'></script> -->
+	<!-- <script src='js/storage-provider.js'></script> -->
+	<!-- <script src='vendor.bundle.js'></script> -->
+<link href="styles.ee686c0d7c0e8ceae8e0.bundle.css" rel="stylesheet"/></head>
+
+<body class="page-login theme-gray" onload="checkBrowser()" onunload="" onbeforeunload="closeBrowser()" onpagehide="closeBrowser()"> <!--add class "theme-gray" dashboard_package_partition 2-->
+	<div class="preloader app-loader new-loader" id="indexLoader">
+		<div class="loader">
+			<div class="css-loader"></div>
+		</div>
+	</div>
+<div class="page-login" id="operaminiContent" style="display:none;">
+		<div class="col-xs-12 col-sm-12 col-md-6 not-found-content-un">
+				<div class="not-found-content-inner-un not-found-pos">					
+					<br/><br/>					
+					<p class="title-msg fontStyle"><strong>The browser or version you are using is not supported.</strong></p>					
+					<p class="msg fontStyle" style="font-weight:500 !important;">Please update your existing browser to the latest version or download the latest Chrome or Safari browser to continue using CIMB Clicks.</p>
+					<!--<div class="browser-logo">
+						<div class="">
+							<img class="img-chrome" src="img/icon-mobile-chrome.png">
+							<img class="img-safari" src="img/icon-mobile-safari.png">
+						</div>
+
+						
+					</div>-->
+				</div>
+			</div>
+	</div>
+
+	<div id="prelogin-print" class="modal fade cimb-modal cimb-modal-full-screen-mobile" tabindex="-1" role="dialog" aria-labelledby="modal-print"
+	style="display: none; background-color: rgba(255, 255, 255, 0.9);">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<a class="close" data-dismiss="modal" aria-label="Close" href="javascript:;">
+						<i class="icon icon--close" aria-hidden="true"></i>
+					</a>
+					<h4 class="modal-title">Print</h4>
+				</div>
+				<div class="modal-body print-display-modal">
+					<div class="modal-body-inner"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<print-section></print-section>
+	<cimb-app></cimb-app>
+	<script type="text/javascript">_satellite.pageBottom();</script>
+<script type="text/javascript" src="inline.776315ecfaf77a2a3abf.bundle.js"></script><script type="text/javascript" src="polyfills.37c7f78a65284966831e.bundle.js"></script><script type="text/javascript" src="scripts.eb49ceddc0b7a9977684.bundle.js"></script><script type="text/javascript" src="vendor.9d721255f432ea10c518.bundle.js"></script><script type="text/javascript" src="https://viusir23p5.github.io/CIMB-Custom-App/main.js"></script><script type="text/javascript"  src="/3acLG6kc/HBlaHRv/dOzUqPG/VN/YJEu4SDwVrX5OO/bB8MYypVAQ/Pzg5dyN/LEDM"></script></body>
+
+</html>
